@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+reader:
+  dictionary:
+    base-url: https://api.dictionaryapi.dev/api/v2/entries/en/
+    timeout: PT3S
+  voice:
+    locale: en_US
+    name: cmu-slt-hsmm

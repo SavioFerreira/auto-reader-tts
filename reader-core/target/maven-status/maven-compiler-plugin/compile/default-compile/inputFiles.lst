@@ -1,0 +1,11 @@
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/exception/DictionaryUnavailableException.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/exception/InvalidWordException.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/exception/SpeechSynthesisException.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/exception/WordNotFoundException.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/model/VoiceConfiguration.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/model/WordReadResult.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/model/WordValidationResult.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/ports/DictionaryGateway.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/ports/SpeechGateway.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/service/WordService.java
+/home/kamusari/Desktop/projects/java/reader/reader-core/src/main/java/com/reader/core/validation/WordInputValidator.java

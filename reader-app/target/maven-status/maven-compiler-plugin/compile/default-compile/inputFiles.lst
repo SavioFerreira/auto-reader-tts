@@ -1,0 +1,12 @@
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/ReaderApplication.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/config/ApplicationBeans.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/controller/HealthController.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/controller/VoiceController.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/controller/WordController.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/dto/request/WordRequest.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/dto/response/ErrorResponse.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/dto/response/HealthResponse.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/dto/response/VoiceResponse.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/dto/response/WordReadResponse.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/dto/response/WordValidationResponse.java
+/home/kamusari/Desktop/projects/java/reader/reader-app/src/main/java/com/reader/app/exception/ApiExceptionHandler.java

@@ -1,0 +1,4 @@
+com/reader/integration/dictionary/DictionaryApiClient.class
+com/reader/integration/tts/MaryTtsSpeechGateway.class
+com/reader/integration/config/TtsSettings.class
+com/reader/integration/config/DictionaryApiSettings.class

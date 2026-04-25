@@ -1,0 +1,11 @@
+com/reader/core/model/WordValidationResult.class
+com/reader/core/exception/WordNotFoundException.class
+com/reader/core/model/VoiceConfiguration.class
+com/reader/core/service/WordService.class
+com/reader/core/exception/DictionaryUnavailableException.class
+com/reader/core/ports/SpeechGateway.class
+com/reader/core/validation/WordInputValidator.class
+com/reader/core/exception/InvalidWordException.class
+com/reader/core/exception/SpeechSynthesisException.class
+com/reader/core/model/WordReadResult.class
+com/reader/core/ports/DictionaryGateway.class

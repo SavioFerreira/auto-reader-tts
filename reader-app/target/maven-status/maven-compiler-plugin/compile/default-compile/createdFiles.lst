@@ -1,0 +1,12 @@
+com/reader/app/dto/request/WordRequest.class
+com/reader/app/dto/response/HealthResponse.class
+com/reader/app/dto/response/ErrorResponse.class
+com/reader/app/dto/response/WordValidationResponse.class
+com/reader/app/controller/HealthController.class
+com/reader/app/controller/WordController.class
+com/reader/app/ReaderApplication.class
+com/reader/app/dto/response/WordReadResponse.class
+com/reader/app/exception/ApiExceptionHandler.class
+com/reader/app/controller/VoiceController.class
+com/reader/app/dto/response/VoiceResponse.class
+com/reader/app/config/ApplicationBeans.class
