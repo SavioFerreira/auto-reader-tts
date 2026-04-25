@@ -27,6 +27,7 @@ class WordControllerTest {
         when(wordService.readWord("hello")).thenReturn(new WordReadResult(
                 "hello",
                 "hello",
+                "hello",
                 true,
                 true,
                 "audio/wav",

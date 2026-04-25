@@ -31,6 +31,7 @@ public class WordController {
         return new WordValidationResponse(
                 validation.originalWord(),
                 validation.normalizedWord(),
+                validation.readableText(),
                 validation.existsInEnglish(),
                 validation.readyToRead()
         );
@@ -42,6 +43,7 @@ public class WordController {
         return new WordReadResponse(
                 readResult.originalWord(),
                 readResult.normalizedWord(),
+                readResult.readableText(),
                 readResult.existsInEnglish(),
                 readResult.readyToRead(),
                 readResult.voiceConfiguration().locale(),

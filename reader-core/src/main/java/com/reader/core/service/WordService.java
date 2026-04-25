@@ -8,6 +8,9 @@ import com.reader.core.ports.DictionaryGateway;
 import com.reader.core.ports.SpeechGateway;
 import com.reader.core.validation.WordInputValidator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class WordService {
 
     private final DictionaryGateway dictionaryGateway;
@@ -25,14 +28,28 @@ public class WordService {
     }
 
     public WordValidationResult validateWord(String originalWord) {
-        String normalizedWord = wordInputValidator.normalize(originalWord);
-        boolean existsInEnglish = dictionaryGateway.existsInEnglish(normalizedWord);
+        List<String> normalizedWords = wordInputValidator.normalizeWords(originalWord);
+        List<String> readableWords = new ArrayList<>();
+        boolean existsInEnglish = true;
+
+        for (String normalizedWord : normalizedWords) {
+            if (dictionaryGateway.existsInEnglish(normalizedWord)) {
+                readableWords.add(normalizedWord);
+                continue;
+            }
+
+            existsInEnglish = false;
+        }
+
+        String normalizedText = String.join(" ", normalizedWords);
+        String readableText = String.join(" ", readableWords);
 
         return new WordValidationResult(
                 originalWord,
-                normalizedWord,
+                normalizedText,
+                readableText,
                 existsInEnglish,
-                existsInEnglish
+                !readableWords.isEmpty()
         );
     }
 
@@ -40,15 +57,16 @@ public class WordService {
         WordValidationResult validationResult = validateWord(originalWord);
         if (!validationResult.readyToRead()) {
             throw new WordNotFoundException(
-                    "The word '%s' was not found in the configured English dictionary."
+                    "None of the words in '%s' were found in the configured English dictionary."
                             .formatted(validationResult.normalizedWord())
             );
         }
 
-        byte[] audioBytes = speechGateway.synthesize(validationResult.normalizedWord());
+        byte[] audioBytes = speechGateway.synthesize(validationResult.readableText());
         return new WordReadResult(
                 validationResult.originalWord(),
                 validationResult.normalizedWord(),
+                validationResult.readableText(),
                 validationResult.existsInEnglish(),
                 validationResult.readyToRead(),
                 speechGateway.getAudioContentType(),
